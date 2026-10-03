@@ -33,7 +33,7 @@ El frontend se comunica con el backend, y el backend con la base de datos. El fr
 - Terraform
 - Git
 
-Imágenes utilizadas (se descargan automáticamente al hacer `terraform apply`, pero puedes descargarlas antes):
+Imágenes utilizadas (se descargan automáticamente al hacer terraform apply, pero pueden descargarse de la siguiente manera):
 
 ```powershell
 docker pull nginx:alpine
@@ -43,7 +43,7 @@ docker pull postgres:16-alpine
 
 ## Despliegue paso a paso
 
-Se trabaja **solo con los workspaces `dev` y `qa`**, no con `default`.
+Se trabaja con los workspaces `dev` y `qa`.
 
 ```powershell
 git clone <url-del-repositorio>
@@ -94,3 +94,6 @@ docker exec web-qa-1 wget -qO- -T 3 http://api-dev-1:3000
 
 En el navegador: http://localhost:4001 (dev), http://localhost:5001 y http://localhost:5011 (qa). Cada una debe mostrar la página de bienvenida por defecto de nginx, confirmando que el contenedor y el puerto están aprovisionados correctamente.
 
+## Alumno
+- Cesar Joaquin Clavijo Diaz
+- ID: 000290784
